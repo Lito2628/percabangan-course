@@ -14,3 +14,46 @@ steps:
     link: '{{ repoUrl }}'
     actions:
       - type: closeIssue
+#Nama : Angelito Zachawerus
+#Universitas Kristen Duta Wacana
+
+
+''' 
+Pak ahmad ingin mendata nilai hasil ujian anak-anak kelas 10. 
+Agar proses pencatatan lebih mudah dilakukan Pak Ahmad membagi konversi nilai 
+menjadi beberapa kategori yaitu, A : >= 90, B+ : >= 80, B : >= 70, C+ : >= 60, D : < 60.
+
+'''
+'''
+menggunakan if, elif,else
+
+Input: Hasil nilai ujian
+
+Proses:
+Masukkan nilai = cek hasil konversi nilai dari angka ke huruf
+
+Output:
+Hasil konversi nilai dari angka ke huruf
+
+
+'''
+Joe = 90
+Rey = 80
+Anggun = 70
+riska = 60
+anto = 45
+
+
+nilai = int(input('Berapa nilai anda?'))
+
+if nilai >= 90:
+    Grade = 'A'
+elif nilai >= 80:
+    Grade = 'B+'
+elif nilai >=70:
+    Grade = 'B'
+elif nilai >= 60:
+    Grade = 'C+'
+else :
+    Grade = 'D'
+print('grade : {}', format(Grade))
